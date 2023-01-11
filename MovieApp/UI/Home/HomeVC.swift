@@ -48,6 +48,11 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         cell.configure()
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailsVC = DetailsVC.create()
+        navigationController?.pushViewController(detailsVC, animated: true)
+    }
 }
 
 extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
@@ -63,6 +68,11 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         CGSize(width: 143, height: 283)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let detailsVC = DetailsVC.create()
+        navigationController?.pushViewController(detailsVC, animated: true)
     }
     
     

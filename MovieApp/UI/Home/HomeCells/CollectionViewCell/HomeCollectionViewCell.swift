@@ -9,10 +9,10 @@ import Foundation
 import UIKit
 
 class HomeCollectionViewCell: UICollectionViewCell{
-    @IBOutlet weak var movieImage: UIImageView!
-    @IBOutlet weak var movieName: UILabel!
-    @IBOutlet weak var movieRating: UILabel!
-    @IBOutlet weak var ratingImage: UIImageView!
+    @IBOutlet private weak var movieImage: UIImageView!
+    @IBOutlet private weak var movieName: UILabel!
+    @IBOutlet private weak var movieRating: UILabel!
+    @IBOutlet private weak var ratingImage: UIImageView!
     
     func configure(){
         ratingImage.image = UIImage(named: "star")
