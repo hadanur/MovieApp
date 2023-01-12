@@ -20,7 +20,10 @@ class HomeTableViewCell: UITableViewCell{
     @IBOutlet private weak var timeImage: UIImageView!
     
     
-    func configure(){
+    func configure(movie: PopularMovie){
+        movieName.text = movie.original_title
+        movieTime.text = movie.release_date
+        
         ratingImage.image = UIImage(named: "star")
         timeImage.image = UIImage(named: "clock")
         movieImage.layer.cornerRadius = 12

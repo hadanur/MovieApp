@@ -11,6 +11,8 @@ class HomeVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var collectionView: UICollectionView!
     
+    var viewModel = HomeVM()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,6 +25,9 @@ class HomeVC: UIViewController {
         tableView.dataSource = self
         collectionView.delegate = self
         collectionView.dataSource = self
+        viewModel.delegate = self
+        viewModel.fetchPopularMovies()
+        viewModel.fetchNowShowingMovies()
         
         title = "Movies"
 
@@ -39,30 +44,33 @@ extension HomeVC {
 
 extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return viewModel.popularMovies.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "homeTableViewCell") as! HomeTableViewCell
         cell.selectionStyle = .none
-        cell.configure()
+        let data = viewModel.popularMovies[indexPath.row]
+        cell.configure(movie: data)
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let detailsVC = DetailsVC.create()
+        let data = viewModel.popularMovies[indexPath.row]
+        let detailsVC = DetailsVC.create(movieName: data.original_title, movieDescription: data.overview, movieLanguage: data.original_language)
         navigationController?.pushViewController(detailsVC, animated: true)
     }
 }
 
 extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return viewModel.nowShowingMovies.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "homeCollectionViewCell", for: indexPath) as! HomeCollectionViewCell
-        cell.configure()
+        let data = viewModel.nowShowingMovies[indexPath.row]
+        cell.configure(movie: data)
         return cell
     }
     
@@ -71,10 +79,25 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let detailsVC = DetailsVC.create()
+        let data = viewModel.nowShowingMovies[indexPath.row]
+        let detailsVC = DetailsVC.create(movieName: data.original_title, movieDescription: data.overview, movieLanguage: data.original_language)
         navigationController?.pushViewController(detailsVC, animated: true)
     }
     
+}
+
+extension HomeVC: HomeVMDelegate {
+    func fetchNowShowingMovies() {
+        self.collectionView.reloadData()
+    }
+    
+    func fetchPopularMovies() {
+        self.tableView.reloadData()
+    }
+    
+    func fetchError() {
+        self.showAlert(title: "Error", message: "Try Again Later")
+    }
     
 }
 

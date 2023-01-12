@@ -28,40 +28,41 @@
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJd-lW-hTF">
-                    <rect key="frame" x="0.0" y="224" width="35.666666666666664" height="17.666666666666657"/>
-                    <fontDescription key="fontDescription" name="MulishRoman-Regular" family="Mulish" pointSize="14"/>
+                    <rect key="frame" x="2" y="224" width="135" height="30"/>
+                    <fontDescription key="fontDescription" name="MulishRoman-Regular" family="Mulish" pointSize="13"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B9P-9t-8bD">
-                    <rect key="frame" x="0.0" y="250.66666666666666" width="9" height="8.9999999999999716"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xch-2N-Ovc">
+                    <rect key="frame" x="15.999999999999998" y="259" width="25.333333333333329" height="15.333333333333314"/>
+                    <fontDescription key="fontDescription" name="MulishRoman-Regular" family="Mulish" pointSize="12"/>
+                    <color key="textColor" red="0.4039215686" green="0.4039215686" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" translatesAutoresizingMaskIntoConstraints="NO" id="B9P-9t-8bD">
+                    <rect key="frame" x="2" y="262" width="9" height="8.9999999999999716"/>
                     <color key="backgroundColor" red="0.63307823129999996" green="0.4039215686" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="9" id="Fcu-Vm-reM"/>
                         <constraint firstAttribute="width" constant="9" id="vcl-S4-s3I"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xch-2N-Ovc">
-                    <rect key="frame" x="13" y="247.66666666666666" width="26" height="15.333333333333343"/>
-                    <fontDescription key="fontDescription" name="MulishRoman-Regular" family="Mulish" pointSize="12"/>
-                    <color key="textColor" red="0.4039215686" green="0.4039215686" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="Xch-2N-Ovc" firstAttribute="leading" secondItem="B9P-9t-8bD" secondAttribute="trailing" constant="4" id="27t-ap-EIq"/>
-                <constraint firstItem="B9P-9t-8bD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Acx-7T-jZZ"/>
+                <constraint firstItem="Xch-2N-Ovc" firstAttribute="leading" secondItem="B9P-9t-8bD" secondAttribute="trailing" constant="5" id="27t-ap-EIq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="AJd-lW-hTF" secondAttribute="trailing" constant="6" id="7AC-4s-jxA"/>
+                <constraint firstItem="B9P-9t-8bD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="2" id="Acx-7T-jZZ"/>
                 <constraint firstItem="5W5-vT-diX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="BWg-ZF-E2H"/>
                 <constraint firstItem="5W5-vT-diX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="EB0-je-HH0"/>
-                <constraint firstItem="Xch-2N-Ovc" firstAttribute="top" secondItem="AJd-lW-hTF" secondAttribute="bottom" constant="6" id="EhO-Ic-WjM"/>
+                <constraint firstItem="Xch-2N-Ovc" firstAttribute="top" secondItem="AJd-lW-hTF" secondAttribute="bottom" constant="5" id="EhO-Ic-WjM"/>
                 <constraint firstItem="5W5-vT-diX" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="GNI-fI-brQ"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Xch-2N-Ovc" secondAttribute="bottom" constant="20" id="HAR-yO-Dmo"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="B9P-9t-8bD" secondAttribute="bottom" constant="23.329999999999998" id="VCD-iq-D5S"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Xch-2N-Ovc" secondAttribute="bottom" constant="8.6666666666666288" id="HAR-yO-Dmo"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="B9P-9t-8bD" secondAttribute="bottom" constant="12" id="VCD-iq-D5S"/>
                 <constraint firstItem="AJd-lW-hTF" firstAttribute="top" secondItem="5W5-vT-diX" secondAttribute="bottom" constant="12" id="aKT-wF-sQt"/>
-                <constraint firstItem="B9P-9t-8bD" firstAttribute="top" secondItem="AJd-lW-hTF" secondAttribute="bottom" constant="9" id="ysF-jq-lk4"/>
-                <constraint firstItem="AJd-lW-hTF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="zzC-7x-8OF"/>
+                <constraint firstItem="B9P-9t-8bD" firstAttribute="top" secondItem="AJd-lW-hTF" secondAttribute="bottom" constant="8" id="ysF-jq-lk4"/>
+                <constraint firstItem="AJd-lW-hTF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="2" id="zzC-7x-8OF"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
@@ -74,6 +75,7 @@
         </view>
     </objects>
     <resources>
+        <image name="clock" width="10" height="11"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

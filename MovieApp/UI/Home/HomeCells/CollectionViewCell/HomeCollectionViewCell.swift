@@ -14,8 +14,13 @@ class HomeCollectionViewCell: UICollectionViewCell{
     @IBOutlet private weak var movieRating: UILabel!
     @IBOutlet private weak var ratingImage: UIImageView!
     
-    func configure(){
-        ratingImage.image = UIImage(named: "star")
+    func configure(movie: NowShowingMovie){
+        setupUI()
+        movieName.text = movie.original_title
+        movieRating.text = movie.release_date
+    }
+    
+    func setupUI(){
         movieImage.layer.cornerRadius = 12
         movieImage.layer.shadowOffset = CGSizeMake(0, 0)
         movieImage.layer.shadowColor = UIColor.systemGray.cgColor

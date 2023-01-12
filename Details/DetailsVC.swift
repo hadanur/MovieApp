@@ -20,6 +20,9 @@ class DetailsVC: UIViewController {
     @IBOutlet private weak var selectedMovieRating2: UILabel!
     @IBOutlet private weak var selectedMovieDescription: UILabel!
     
+    private var movieName: String?
+    private var movieDescription: String?
+    private var movieLanguage: String?
     
     
     override func viewDidLoad() {
@@ -27,6 +30,9 @@ class DetailsVC: UIViewController {
 
         let detailsCell = UINib(nibName: "DetailsCell", bundle: nil)
         collectionView.register(detailsCell, forCellWithReuseIdentifier: "detailsCell")
+        selectedMovieName.text = movieName
+        selectedMovieDescription.text = movieDescription
+        selectedMovieLanguage.text = movieLanguage
         
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -35,8 +41,11 @@ class DetailsVC: UIViewController {
 }
 
 extension DetailsVC {
-    static func create() -> DetailsVC {
+    static func create(movieName: String?, movieDescription: String?, movieLanguage: String?) -> DetailsVC {
         let vc = DetailsVC(nibName: "DetailsVC", bundle: nil)
+        vc.movieName = movieName
+        vc.movieDescription = movieDescription
+        vc.movieLanguage = movieLanguage
         return vc
     }
 }
