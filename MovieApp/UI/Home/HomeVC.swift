@@ -29,6 +29,7 @@ class HomeVC: UIViewController {
         viewModel.fetchPopularMovies()
         viewModel.fetchNowShowingMovies()
         
+
         title = "Movies"
 
     }

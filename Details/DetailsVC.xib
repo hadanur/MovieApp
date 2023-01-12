@@ -42,7 +42,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oRr-h5-oid">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spiderman" translatesAutoresizingMaskIntoConstraints="NO" id="oRr-h5-oid">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
                     <color key="backgroundColor" red="0.52941176469999995" green="0.4039215686" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
@@ -98,7 +98,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UCA-4e-7s9">
-                            <rect key="frame" x="131" y="123.5" width="56" height="15.5"/>
+                            <rect key="frame" x="131" y="123.5" width="55.5" height="15.5"/>
                             <fontDescription key="fontDescription" name="Mulish-Light" family="Mulish" pointSize="12"/>
                             <color key="textColor" red="0.4039215686" green="0.4039215686" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
@@ -137,8 +137,8 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="zVK-LJ-rsb">
-                            <rect key="frame" x="24" y="393" width="366" height="132"/>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="zVK-LJ-rsb">
+                            <rect key="frame" x="24" y="393" width="390" height="132"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qSZ-Mj-cuX">
                                 <size key="itemSize" width="128" height="128"/>
@@ -148,7 +148,7 @@
                             </collectionViewFlowLayout>
                         </collectionView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bV2-Tm-2Lm">
-                            <rect key="frame" x="236" y="123" width="37" height="15.5"/>
+                            <rect key="frame" x="236.5" y="123" width="36.5" height="15.5"/>
                             <fontDescription key="fontDescription" name="Mulish-Light" family="Mulish" pointSize="12"/>
                             <color key="textColor" red="0.4039215686" green="0.4039215686" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
@@ -163,7 +163,7 @@
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstItem="bV2-Tm-2Lm" firstAttribute="top" secondItem="fwL-QC-Mzg" secondAttribute="top" constant="123" id="0II-qK-E8I"/>
-                        <constraint firstAttribute="trailing" secondItem="zVK-LJ-rsb" secondAttribute="trailing" constant="24" id="26H-Ea-xLx"/>
+                        <constraint firstAttribute="trailing" secondItem="zVK-LJ-rsb" secondAttribute="trailing" id="26H-Ea-xLx"/>
                         <constraint firstItem="jj7-77-zua" firstAttribute="leading" secondItem="fwL-QC-Mzg" secondAttribute="leading" constant="24" id="4FZ-8n-SbE"/>
                         <constraint firstItem="YRv-S2-Djm" firstAttribute="leading" secondItem="fwL-QC-Mzg" secondAttribute="leading" constant="24" id="4Mm-Kp-SJB"/>
                         <constraint firstItem="1gP-t5-7QP" firstAttribute="top" secondItem="H5V-eW-Y5c" secondAttribute="bottom" constant="20" id="7wy-7e-TbS"/>
@@ -216,6 +216,7 @@
         </view>
     </objects>
     <resources>
+        <image name="spiderman" width="1920" height="1080"/>
         <image name="star" width="12" height="12"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

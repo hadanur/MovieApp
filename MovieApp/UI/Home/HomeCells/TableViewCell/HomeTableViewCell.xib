@@ -25,7 +25,7 @@
             <rect key="frame" x="0.0" y="0.0" width="304" height="140"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CNe-1E-hyP">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="theGodfather" translatesAutoresizingMaskIntoConstraints="NO" id="CNe-1E-hyP">
                     <rect key="frame" x="0.0" y="0.0" width="85" height="128"/>
                     <color key="backgroundColor" red="0.61661910519999996" green="1" blue="0.6109868678" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
@@ -125,6 +125,7 @@
         </view>
     </objects>
     <resources>
+        <image name="theGodfather" width="1396" height="1982"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

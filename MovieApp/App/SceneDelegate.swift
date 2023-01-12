@@ -22,6 +22,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window?.rootViewController = navController
         window?.makeKeyAndVisible()
+        
+       // navController.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Merriweather", size: 20)]
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

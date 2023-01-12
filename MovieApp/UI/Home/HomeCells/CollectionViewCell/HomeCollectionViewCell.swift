@@ -23,8 +23,8 @@ class HomeCollectionViewCell: UICollectionViewCell{
     func setupUI(){
         movieImage.layer.cornerRadius = 12
         movieImage.layer.shadowOffset = CGSizeMake(0, 0)
-        movieImage.layer.shadowColor = UIColor.systemGray.cgColor
-        movieImage.layer.shadowOpacity = 0.33
+        movieImage.layer.shadowColor = UIColor.black.cgColor
+        movieImage.layer.shadowOpacity = 0.53
         movieImage.layer.shadowRadius = 16
     }
 }
