@@ -15,10 +15,10 @@ protocol HomeVMDelegate: AnyObject {
 }
 
 class HomeVM {
-    let service = WebService.shared
-    var popularMovies = [PopularMovie]()
+    private let service = WebService.shared
+    var popularMovies = [Movie]()
     weak var delegate: HomeVMDelegate?
-    var nowShowingMovies = [NowShowingMovie]()
+    var nowShowingMovies = [Movie]()
     
     func fetchPopularMovies() {
         service.downloadPopularMovies { result in
@@ -47,5 +47,4 @@ class HomeVM {
             }
         }
     }
-
 }

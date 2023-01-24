@@ -11,7 +11,7 @@ class HomeVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var viewModel = HomeVM()
+    var viewModel: HomeVM!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,19 +26,18 @@ class HomeVC: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         viewModel.delegate = self
+
         viewModel.fetchPopularMovies()
         viewModel.fetchNowShowingMovies()
         
-
         title = "Movies"
-
     }
-
 }
 
 extension HomeVC {
     static func create() -> HomeVC {
         let vc = HomeVC(nibName: "HomeVC", bundle: nil)
+        vc.viewModel = HomeVM()
         return vc
     }
 }
@@ -58,7 +57,7 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let data = viewModel.popularMovies[indexPath.row]
-        let detailsVC = DetailsVC.create(movieName: data.original_title, movieDescription: data.overview, movieLanguage: data.original_language)
+        let detailsVC = DetailsVC.create(movie: data)
         navigationController?.pushViewController(detailsVC, animated: true)
     }
 }
@@ -81,7 +80,7 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let data = viewModel.nowShowingMovies[indexPath.row]
-        let detailsVC = DetailsVC.create(movieName: data.original_title, movieDescription: data.overview, movieLanguage: data.original_language)
+        let detailsVC = DetailsVC.create(movie: data)
         navigationController?.pushViewController(detailsVC, animated: true)
     }
     

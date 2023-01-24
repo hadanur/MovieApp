@@ -8,7 +8,7 @@
 import UIKit
 
 class DetailsVC: UIViewController {
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet private weak var collectionView: UICollectionView!
     
     @IBOutlet private weak var selectedMovieName: UILabel!
     @IBOutlet private weak var selectedMovieRating: UILabel!
@@ -20,32 +20,28 @@ class DetailsVC: UIViewController {
     @IBOutlet private weak var selectedMovieRating2: UILabel!
     @IBOutlet private weak var selectedMovieDescription: UILabel!
     
-    private var movieName: String?
-    private var movieDescription: String?
-    private var movieLanguage: String?
-    
+    private var movie: Movie!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         let detailsCell = UINib(nibName: "DetailsCell", bundle: nil)
         collectionView.register(detailsCell, forCellWithReuseIdentifier: "detailsCell")
-        selectedMovieName.text = movieName
-        selectedMovieDescription.text = movieDescription
-        selectedMovieLanguage.text = movieLanguage
-        
+
         collectionView.delegate = self
         collectionView.dataSource = self
+
+        selectedMovieName.text = movie.original_title
+        selectedMovieDescription.text = movie.overview
+        selectedMovieLanguage.text = movie.original_language
     }
     
 }
 
 extension DetailsVC {
-    static func create(movieName: String?, movieDescription: String?, movieLanguage: String?) -> DetailsVC {
+    static func create(movie: Movie) -> DetailsVC {
         let vc = DetailsVC(nibName: "DetailsVC", bundle: nil)
-        vc.movieName = movieName
-        vc.movieDescription = movieDescription
-        vc.movieLanguage = movieLanguage
+        vc.movie = movie
         return vc
     }
 }

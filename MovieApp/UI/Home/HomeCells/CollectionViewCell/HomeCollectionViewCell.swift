@@ -14,10 +14,10 @@ class HomeCollectionViewCell: UICollectionViewCell{
     @IBOutlet private weak var movieRating: UILabel!
     @IBOutlet private weak var ratingImage: UIImageView!
     
-    func configure(movie: NowShowingMovie){
-        setupUI()
+    func configure(movie: Movie){
         movieName.text = movie.original_title
         movieRating.text = movie.release_date
+        setupUI()
     }
     
     func setupUI(){
