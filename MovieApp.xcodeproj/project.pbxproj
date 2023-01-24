@@ -9,21 +9,86 @@
 /* Begin PBXBuildFile section */
 		B7060B32296F543B0018377E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7060B31296F543B0018377E /* AppDelegate.swift */; };
 		B7060B34296F543B0018377E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7060B33296F543B0018377E /* SceneDelegate.swift */; };
-		B7060B36296F543B0018377E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7060B35296F543B0018377E /* ViewController.swift */; };
-		B7060B39296F543B0018377E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7060B37296F543B0018377E /* Main.storyboard */; };
 		B7060B3B296F543B0018377E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7060B3A296F543B0018377E /* Assets.xcassets */; };
 		B7060B3E296F543B0018377E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7060B3C296F543B0018377E /* LaunchScreen.storyboard */; };
+		B7060B49296F54FE0018377E /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7060B48296F54FE0018377E /* HomeVC.swift */; };
+		B7060B4B296F550A0018377E /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7060B4A296F550A0018377E /* HomeVC.xib */; };
+		B71FE0AF2972C0B300E58523 /* Mulish-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B7E8DDB8296F5FFF00C572B3 /* Mulish-Italic-VariableFont_wght.ttf */; };
+		B71FE0B02972C0B300E58523 /* Mulish-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B7E8DDB9296F5FFF00C572B3 /* Mulish-VariableFont_wght.ttf */; };
+		B71FE0B12972C0BA00E58523 /* Merriweather-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B7060B50296F59BB0018377E /* Merriweather-Regular.ttf */; };
+		B71FE0B22972C0BA00E58523 /* Merriweather-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B7060B57296F59BB0018377E /* Merriweather-LightItalic.ttf */; };
+		B71FE0B32972C0BA00E58523 /* Merriweather-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B7060B51296F59BB0018377E /* Merriweather-Light.ttf */; };
+		B71FE0B42972C0BA00E58523 /* Merriweather-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B7060B55296F59BB0018377E /* Merriweather-Italic.ttf */; };
+		B71FE0B52972C0BA00E58523 /* Merriweather-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B7060B53296F59BB0018377E /* Merriweather-BlackItalic.ttf */; };
+		B71FE0B62972C0BA00E58523 /* Merriweather-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B7060B4F296F59BB0018377E /* Merriweather-Bold.ttf */; };
+		B71FE0B72972C0BA00E58523 /* Merriweather-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B7060B52296F59BB0018377E /* Merriweather-BoldItalic.ttf */; };
+		B71FE0B82972C0BA00E58523 /* Merriweather-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B7060B56296F59BB0018377E /* Merriweather-Black.ttf */; };
+		B73A1F4C2970689E00F326D3 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73A1F4B2970689E00F326D3 /* WebService.swift */; };
+		B73A1F4F297068CC00F326D3 /* MovieBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73A1F4E297068CC00F326D3 /* MovieBaseModel.swift */; };
+		B73A1F5129706AF300F326D3 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73A1F5029706AF300F326D3 /* HomeVM.swift */; };
+		B73A1F5429706C3300F326D3 /* UIViewController + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73A1F5329706C3300F326D3 /* UIViewController + Extensions.swift */; };
+		B7E8DD9F296F5DE600C572B3 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E8DD9E296F5DE600C572B3 /* HomeTableViewCell.swift */; };
+		B7E8DDA1296F5DEF00C572B3 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7E8DDA0296F5DEF00C572B3 /* HomeTableViewCell.xib */; };
+		B7E8DDBB296F635E00C572B3 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7E8DDBA296F635E00C572B3 /* HomeCollectionViewCell.xib */; };
+		B7E8DDBD296F637100C572B3 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E8DDBC296F637100C572B3 /* HomeCollectionViewCell.swift */; };
+		B7E8DDC5296F6C7400C572B3 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E8DDC4296F6C7400C572B3 /* DetailsVC.swift */; };
+		B7E8DDC7296F6C8300C572B3 /* DetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7E8DDC6296F6C8300C572B3 /* DetailsVC.xib */; };
+		B7E8DDCC296F72DE00C572B3 /* DetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E8DDCB296F72DE00C572B3 /* DetailsCell.swift */; };
+		B7E8DDCE296F735800C572B3 /* DetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7E8DDCD296F735800C572B3 /* DetailsCell.xib */; };
+		B7E8DDD1296F771100C572B3 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = B7E8DDD0296F771100C572B3 /* SDWebImage */; };
+		B7E8DDD3296F771100C572B3 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B7E8DDD2296F771100C572B3 /* SDWebImageMapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B7060B2E296F543B0018377E /* MovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7060B31296F543B0018377E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7060B33296F543B0018377E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B7060B35296F543B0018377E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B7060B38296F543B0018377E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B7060B3A296F543B0018377E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7060B3D296F543B0018377E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7060B3F296F543B0018377E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7060B48296F54FE0018377E /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		B7060B4A296F550A0018377E /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		B7060B4F296F59BB0018377E /* Merriweather-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Bold.ttf"; sourceTree = "<group>"; };
+		B7060B50296F59BB0018377E /* Merriweather-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Regular.ttf"; sourceTree = "<group>"; };
+		B7060B51296F59BB0018377E /* Merriweather-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Light.ttf"; sourceTree = "<group>"; };
+		B7060B52296F59BB0018377E /* Merriweather-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-BoldItalic.ttf"; sourceTree = "<group>"; };
+		B7060B53296F59BB0018377E /* Merriweather-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-BlackItalic.ttf"; sourceTree = "<group>"; };
+		B7060B54296F59BB0018377E /* OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		B7060B55296F59BB0018377E /* Merriweather-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Italic.ttf"; sourceTree = "<group>"; };
+		B7060B56296F59BB0018377E /* Merriweather-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Black.ttf"; sourceTree = "<group>"; };
+		B7060B57296F59BB0018377E /* Merriweather-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-LightItalic.ttf"; sourceTree = "<group>"; };
+		B73A1F4B2970689E00F326D3 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		B73A1F4E297068CC00F326D3 /* MovieBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBaseModel.swift; sourceTree = "<group>"; };
+		B73A1F5029706AF300F326D3 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		B73A1F5329706C3300F326D3 /* UIViewController + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extensions.swift"; sourceTree = "<group>"; };
+		B7E8DD9E296F5DE600C572B3 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		B7E8DDA0296F5DEF00C572B3 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		B7E8DDA6296F5FFF00C572B3 /* Mulish-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-LightItalic.ttf"; sourceTree = "<group>"; };
+		B7E8DDA7296F5FFF00C572B3 /* Mulish-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		B7E8DDA8296F5FFF00C572B3 /* Mulish-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-Italic.ttf"; sourceTree = "<group>"; };
+		B7E8DDA9296F5FFF00C572B3 /* Mulish-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-Regular.ttf"; sourceTree = "<group>"; };
+		B7E8DDAA296F5FFF00C572B3 /* Mulish-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-Black.ttf"; sourceTree = "<group>"; };
+		B7E8DDAB296F5FFF00C572B3 /* Mulish-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-BlackItalic.ttf"; sourceTree = "<group>"; };
+		B7E8DDAC296F5FFF00C572B3 /* Mulish-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		B7E8DDAD296F5FFF00C572B3 /* Mulish-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		B7E8DDAE296F5FFF00C572B3 /* Mulish-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-Bold.ttf"; sourceTree = "<group>"; };
+		B7E8DDAF296F5FFF00C572B3 /* Mulish-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-Light.ttf"; sourceTree = "<group>"; };
+		B7E8DDB0296F5FFF00C572B3 /* Mulish-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-ExtraBold.ttf"; sourceTree = "<group>"; };
+		B7E8DDB1296F5FFF00C572B3 /* Mulish-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-ExtraLight.ttf"; sourceTree = "<group>"; };
+		B7E8DDB2296F5FFF00C572B3 /* Mulish-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-Medium.ttf"; sourceTree = "<group>"; };
+		B7E8DDB3296F5FFF00C572B3 /* Mulish-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-MediumItalic.ttf"; sourceTree = "<group>"; };
+		B7E8DDB4296F5FFF00C572B3 /* Mulish-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-SemiBold.ttf"; sourceTree = "<group>"; };
+		B7E8DDB5296F5FFF00C572B3 /* Mulish-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-BoldItalic.ttf"; sourceTree = "<group>"; };
+		B7E8DDB6296F5FFF00C572B3 /* OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		B7E8DDB7296F5FFF00C572B3 /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		B7E8DDB8296F5FFF00C572B3 /* Mulish-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		B7E8DDB9296F5FFF00C572B3 /* Mulish-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		B7E8DDBA296F635E00C572B3 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		B7E8DDBC296F637100C572B3 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		B7E8DDC4296F6C7400C572B3 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
+		B7E8DDC6296F6C8300C572B3 /* DetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsVC.xib; sourceTree = "<group>"; };
+		B7E8DDCB296F72DE00C572B3 /* DetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCell.swift; sourceTree = "<group>"; };
+		B7E8DDCD296F735800C572B3 /* DetailsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +96,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7E8DDD3296F771100C572B3 /* SDWebImageMapKit in Frameworks */,
+				B7E8DDD1296F771100C572B3 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +123,184 @@
 		B7060B30296F543B0018377E /* MovieApp */ = {
 			isa = PBXGroup;
 			children = (
-				B7060B31296F543B0018377E /* AppDelegate.swift */,
-				B7060B33296F543B0018377E /* SceneDelegate.swift */,
-				B7060B35296F543B0018377E /* ViewController.swift */,
-				B7060B37296F543B0018377E /* Main.storyboard */,
-				B7060B3A296F543B0018377E /* Assets.xcassets */,
-				B7060B3C296F543B0018377E /* LaunchScreen.storyboard */,
-				B7060B3F296F543B0018377E /* Info.plist */,
+				B73A1F5229706C2300F326D3 /* Extensions */,
+				B73A1F4D297068AE00F326D3 /* Model */,
+				B73A1F492970688B00F326D3 /* Network */,
+				B7060B47296F54790018377E /* Assets */,
+				B7060B46296F54710018377E /* App */,
+				B7060B45296F54620018377E /* UI */,
 			);
 			path = MovieApp;
+			sourceTree = "<group>";
+		};
+		B7060B45296F54620018377E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B7E8DDC3296F6C5100C572B3 /* Details */,
+				B7060B3C296F543B0018377E /* LaunchScreen.storyboard */,
+				B7E8DDC2296F6B3200C572B3 /* Home */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B7060B46296F54710018377E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B7060B31296F543B0018377E /* AppDelegate.swift */,
+				B7060B33296F543B0018377E /* SceneDelegate.swift */,
+				B7060B3F296F543B0018377E /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B7060B47296F54790018377E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B7E8DDA4296F5FFF00C572B3 /* Mulish */,
+				B7060B4E296F59BB0018377E /* Merriweather */,
+				B7060B3A296F543B0018377E /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		B7060B4E296F59BB0018377E /* Merriweather */ = {
+			isa = PBXGroup;
+			children = (
+				B7060B4F296F59BB0018377E /* Merriweather-Bold.ttf */,
+				B7060B50296F59BB0018377E /* Merriweather-Regular.ttf */,
+				B7060B51296F59BB0018377E /* Merriweather-Light.ttf */,
+				B7060B52296F59BB0018377E /* Merriweather-BoldItalic.ttf */,
+				B7060B53296F59BB0018377E /* Merriweather-BlackItalic.ttf */,
+				B7060B54296F59BB0018377E /* OFL.txt */,
+				B7060B55296F59BB0018377E /* Merriweather-Italic.ttf */,
+				B7060B56296F59BB0018377E /* Merriweather-Black.ttf */,
+				B7060B57296F59BB0018377E /* Merriweather-LightItalic.ttf */,
+			);
+			path = Merriweather;
+			sourceTree = "<group>";
+		};
+		B73A1F492970688B00F326D3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B73A1F4A2970689200F326D3 /* WebService */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B73A1F4A2970689200F326D3 /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				B73A1F4B2970689E00F326D3 /* WebService.swift */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		B73A1F4D297068AE00F326D3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B73A1F4E297068CC00F326D3 /* MovieBaseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B73A1F5229706C2300F326D3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B73A1F5329706C3300F326D3 /* UIViewController + Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B7E8DD99296F5DA600C572B3 /* HomeCells */ = {
+			isa = PBXGroup;
+			children = (
+				B7E8DD9D296F5DD400C572B3 /* CollectionViewCell */,
+				B7E8DD9C296F5DCF00C572B3 /* TableViewCell */,
+			);
+			path = HomeCells;
+			sourceTree = "<group>";
+		};
+		B7E8DD9C296F5DCF00C572B3 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B7E8DD9E296F5DE600C572B3 /* HomeTableViewCell.swift */,
+				B7E8DDA0296F5DEF00C572B3 /* HomeTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		B7E8DD9D296F5DD400C572B3 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B7E8DDBC296F637100C572B3 /* HomeCollectionViewCell.swift */,
+				B7E8DDBA296F635E00C572B3 /* HomeCollectionViewCell.xib */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		B7E8DDA4296F5FFF00C572B3 /* Mulish */ = {
+			isa = PBXGroup;
+			children = (
+				B7E8DDA5296F5FFF00C572B3 /* static */,
+				B7E8DDB6296F5FFF00C572B3 /* OFL.txt */,
+				B7E8DDB7296F5FFF00C572B3 /* README.txt */,
+				B7E8DDB8296F5FFF00C572B3 /* Mulish-Italic-VariableFont_wght.ttf */,
+				B7E8DDB9296F5FFF00C572B3 /* Mulish-VariableFont_wght.ttf */,
+			);
+			path = Mulish;
+			sourceTree = "<group>";
+		};
+		B7E8DDA5296F5FFF00C572B3 /* static */ = {
+			isa = PBXGroup;
+			children = (
+				B7E8DDA6296F5FFF00C572B3 /* Mulish-LightItalic.ttf */,
+				B7E8DDA7296F5FFF00C572B3 /* Mulish-ExtraBoldItalic.ttf */,
+				B7E8DDA8296F5FFF00C572B3 /* Mulish-Italic.ttf */,
+				B7E8DDA9296F5FFF00C572B3 /* Mulish-Regular.ttf */,
+				B7E8DDAA296F5FFF00C572B3 /* Mulish-Black.ttf */,
+				B7E8DDAB296F5FFF00C572B3 /* Mulish-BlackItalic.ttf */,
+				B7E8DDAC296F5FFF00C572B3 /* Mulish-SemiBoldItalic.ttf */,
+				B7E8DDAD296F5FFF00C572B3 /* Mulish-ExtraLightItalic.ttf */,
+				B7E8DDAE296F5FFF00C572B3 /* Mulish-Bold.ttf */,
+				B7E8DDAF296F5FFF00C572B3 /* Mulish-Light.ttf */,
+				B7E8DDB0296F5FFF00C572B3 /* Mulish-ExtraBold.ttf */,
+				B7E8DDB1296F5FFF00C572B3 /* Mulish-ExtraLight.ttf */,
+				B7E8DDB2296F5FFF00C572B3 /* Mulish-Medium.ttf */,
+				B7E8DDB3296F5FFF00C572B3 /* Mulish-MediumItalic.ttf */,
+				B7E8DDB4296F5FFF00C572B3 /* Mulish-SemiBold.ttf */,
+				B7E8DDB5296F5FFF00C572B3 /* Mulish-BoldItalic.ttf */,
+			);
+			path = static;
+			sourceTree = "<group>";
+		};
+		B7E8DDC2296F6B3200C572B3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B7060B48296F54FE0018377E /* HomeVC.swift */,
+				B7060B4A296F550A0018377E /* HomeVC.xib */,
+				B73A1F5029706AF300F326D3 /* HomeVM.swift */,
+				B7E8DD99296F5DA600C572B3 /* HomeCells */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B7E8DDC3296F6C5100C572B3 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				B7E8DDC8296F72CD00C572B3 /* Cell */,
+				B7E8DDC4296F6C7400C572B3 /* DetailsVC.swift */,
+				B7E8DDC6296F6C8300C572B3 /* DetailsVC.xib */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		B7E8DDC8296F72CD00C572B3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B7E8DDCB296F72DE00C572B3 /* DetailsCell.swift */,
+				B7E8DDCD296F735800C572B3 /* DetailsCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +319,10 @@
 			dependencies = (
 			);
 			name = MovieApp;
+			packageProductDependencies = (
+				B7E8DDD0296F771100C572B3 /* SDWebImage */,
+				B7E8DDD2296F771100C572B3 /* SDWebImageMapKit */,
+			);
 			productName = MovieApp;
 			productReference = B7060B2E296F543B0018377E /* MovieApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +351,9 @@
 				Base,
 			);
 			mainGroup = B7060B25296F543B0018377E;
+			packageReferences = (
+				B7E8DDCF296F771100C572B3 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = B7060B2F296F543B0018377E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,9 +368,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B71FE0B82972C0BA00E58523 /* Merriweather-Black.ttf in Resources */,
+				B7E8DDBB296F635E00C572B3 /* HomeCollectionViewCell.xib in Resources */,
 				B7060B3E296F543B0018377E /* LaunchScreen.storyboard in Resources */,
+				B71FE0B02972C0B300E58523 /* Mulish-VariableFont_wght.ttf in Resources */,
+				B7060B4B296F550A0018377E /* HomeVC.xib in Resources */,
+				B71FE0B42972C0BA00E58523 /* Merriweather-Italic.ttf in Resources */,
+				B71FE0B12972C0BA00E58523 /* Merriweather-Regular.ttf in Resources */,
+				B7E8DDA1296F5DEF00C572B3 /* HomeTableViewCell.xib in Resources */,
+				B71FE0B32972C0BA00E58523 /* Merriweather-Light.ttf in Resources */,
 				B7060B3B296F543B0018377E /* Assets.xcassets in Resources */,
-				B7060B39296F543B0018377E /* Main.storyboard in Resources */,
+				B71FE0B52972C0BA00E58523 /* Merriweather-BlackItalic.ttf in Resources */,
+				B71FE0B72972C0BA00E58523 /* Merriweather-BoldItalic.ttf in Resources */,
+				B71FE0B22972C0BA00E58523 /* Merriweather-LightItalic.ttf in Resources */,
+				B7E8DDCE296F735800C572B3 /* DetailsCell.xib in Resources */,
+				B71FE0B62972C0BA00E58523 /* Merriweather-Bold.ttf in Resources */,
+				B7E8DDC7296F6C8300C572B3 /* DetailsVC.xib in Resources */,
+				B71FE0AF2972C0B300E58523 /* Mulish-Italic-VariableFont_wght.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +395,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7060B36296F543B0018377E /* ViewController.swift in Sources */,
+				B7E8DDCC296F72DE00C572B3 /* DetailsCell.swift in Sources */,
+				B73A1F5129706AF300F326D3 /* HomeVM.swift in Sources */,
+				B7E8DDBD296F637100C572B3 /* HomeCollectionViewCell.swift in Sources */,
+				B73A1F4C2970689E00F326D3 /* WebService.swift in Sources */,
+				B7E8DDC5296F6C7400C572B3 /* DetailsVC.swift in Sources */,
+				B7060B49296F54FE0018377E /* HomeVC.swift in Sources */,
 				B7060B32296F543B0018377E /* AppDelegate.swift in Sources */,
+				B73A1F5429706C3300F326D3 /* UIViewController + Extensions.swift in Sources */,
+				B73A1F4F297068CC00F326D3 /* MovieBaseModel.swift in Sources */,
+				B7E8DD9F296F5DE600C572B3 /* HomeTableViewCell.swift in Sources */,
 				B7060B34296F543B0018377E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +412,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B7060B37296F543B0018377E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B7060B38296F543B0018377E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B7060B3C296F543B0018377E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,10 +546,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L24C9CN3G6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MovieApp/Info.plist;
+				INFOPLIST_FILE = MovieApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -317,10 +573,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L24C9CN3G6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MovieApp/Info.plist;
+				INFOPLIST_FILE = MovieApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +613,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B7E8DDCF296F771100C572B3 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B7E8DDD0296F771100C572B3 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7E8DDCF296F771100C572B3 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		B7E8DDD2296F771100C572B3 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7E8DDCF296F771100C572B3 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B7060B26296F543B0018377E /* Project object */;
 }

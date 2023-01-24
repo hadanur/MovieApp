@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Mulish-Bold.ttf">
+            <string>Mulish-Bold</string>
+        </array>
+        <array key="Mulish-Light.ttf">
+            <string>Mulish-Light</string>
+        </array>
+        <array key="Mulish-VariableFont_wght.ttf">
+            <string>MulishRoman-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HomeTableViewCell" customModule="MovieApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="304" height="140"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="theGodfather" translatesAutoresizingMaskIntoConstraints="NO" id="CNe-1E-hyP">
+                    <rect key="frame" x="0.0" y="0.0" width="85" height="128"/>
+                    <color key="backgroundColor" red="0.61661910519999996" green="1" blue="0.6109868678" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="7hY-wW-2X1"/>
+                        <constraint firstAttribute="width" constant="85" id="gsu-gr-5cD"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNQ-wz-jxR">
+                    <rect key="frame" x="101" y="5" width="36.666666666666657" height="17.666666666666668"/>
+                    <fontDescription key="fontDescription" name="Mulish-Bold" family="Mulish" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sJ-1N-tjt">
+                    <rect key="frame" x="117" y="30.666666666666671" width="30" height="16"/>
+                    <fontDescription key="fontDescription" name="Mulish-Light" family="Mulish" pointSize="12"/>
+                    <color key="textColor" red="0.4039215686" green="0.4039215686" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ixn-62-O3Q">
+                    <rect key="frame" x="101" y="31.666666666666671" width="12" height="12"/>
+                    <color key="backgroundColor" red="0.61661910519999996" green="1" blue="0.6109868678" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="5BM-g8-Ems"/>
+                        <constraint firstAttribute="width" constant="12" id="TnJ-iL-fWy"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWY-El-GBS">
+                    <rect key="frame" x="101" y="67" width="30" height="16"/>
+                    <fontDescription key="fontDescription" name="Mulish-Light" family="Mulish" pointSize="12"/>
+                    <color key="textColor" red="0.4039215686" green="0.4039215686" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNf-LS-fU4">
+                    <rect key="frame" x="139" y="67" width="30" height="16"/>
+                    <fontDescription key="fontDescription" name="Mulish-Light" family="Mulish" pointSize="12"/>
+                    <color key="textColor" red="0.4039215686" green="0.4039215686" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bmd-hz-PdI">
+                    <rect key="frame" x="177" y="67" width="30" height="16"/>
+                    <fontDescription key="fontDescription" name="Mulish-Light" family="Mulish" pointSize="12"/>
+                    <color key="textColor" red="0.4039215686" green="0.4039215686" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CBz-nO-1X4">
+                    <rect key="frame" x="114" y="90" width="26" height="16"/>
+                    <fontDescription key="fontDescription" name="MulishRoman-Regular" family="Mulish" pointSize="12"/>
+                    <color key="textColor" white="0.47999999999999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PQU-zT-2Fu">
+                    <rect key="frame" x="101" y="93" width="9" height="9"/>
+                    <color key="backgroundColor" red="0.63307823129999996" green="0.4039215686" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="9" id="Ax3-Xk-C2d"/>
+                        <constraint firstAttribute="width" constant="9" id="HhS-9b-1Uo"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="CNe-1E-hyP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="05l-SE-9Hy"/>
+                <constraint firstItem="RNQ-wz-jxR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="2tW-h9-M6s"/>
+                <constraint firstItem="Bmd-hz-PdI" firstAttribute="leading" secondItem="hNf-LS-fU4" secondAttribute="trailing" constant="8" id="4TI-2B-tJW"/>
+                <constraint firstItem="CNe-1E-hyP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6d0-0K-EGZ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="CBz-nO-1X4" secondAttribute="bottom" constant="34" id="8bK-vK-l3w"/>
+                <constraint firstItem="ixn-62-O3Q" firstAttribute="leading" secondItem="CNe-1E-hyP" secondAttribute="trailing" constant="16" id="EF7-qb-5mf"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="hNf-LS-fU4" secondAttribute="bottom" constant="57" id="R5k-MQ-0dQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="CNe-1E-hyP" secondAttribute="bottom" constant="12" id="RbF-9o-CYQ"/>
+                <constraint firstItem="3sJ-1N-tjt" firstAttribute="top" secondItem="RNQ-wz-jxR" secondAttribute="bottom" constant="8" id="UFD-pS-C3H"/>
+                <constraint firstItem="PQU-zT-2Fu" firstAttribute="leading" secondItem="CNe-1E-hyP" secondAttribute="trailing" constant="16" id="Y7s-nN-PWl"/>
+                <constraint firstItem="hNf-LS-fU4" firstAttribute="leading" secondItem="EWY-El-GBS" secondAttribute="trailing" constant="8" symbolic="YES" id="heS-r1-bZb"/>
+                <constraint firstItem="ixn-62-O3Q" firstAttribute="top" secondItem="RNQ-wz-jxR" secondAttribute="bottom" constant="9" id="iZw-iy-4Xg"/>
+                <constraint firstItem="EWY-El-GBS" firstAttribute="baseline" secondItem="hNf-LS-fU4" secondAttribute="baseline" id="ro1-bd-K6C"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Bmd-hz-PdI" secondAttribute="bottom" constant="57" id="wXc-6j-LZg"/>
+                <constraint firstItem="3sJ-1N-tjt" firstAttribute="leading" secondItem="ixn-62-O3Q" secondAttribute="trailing" constant="4" id="xM9-PJ-azt"/>
+                <constraint firstItem="EWY-El-GBS" firstAttribute="leading" secondItem="PQU-zT-2Fu" secondAttribute="leading" id="y9A-Cf-Fzz"/>
+                <constraint firstItem="RNQ-wz-jxR" firstAttribute="leading" secondItem="CNe-1E-hyP" secondAttribute="trailing" constant="16" id="zHj-dE-b7i"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="PQU-zT-2Fu" secondAttribute="bottom" constant="38" id="zaw-lL-IV1"/>
+                <constraint firstItem="CBz-nO-1X4" firstAttribute="leading" secondItem="PQU-zT-2Fu" secondAttribute="trailing" constant="4" id="zxg-Ny-cnD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="movieImage" destination="CNe-1E-hyP" id="eJM-nV-2G7"/>
+                <outlet property="movieName" destination="RNQ-wz-jxR" id="c0D-BJ-xVR"/>
+                <outlet property="movieRating" destination="3sJ-1N-tjt" id="bN0-sR-bB6"/>
+                <outlet property="movieTime" destination="CBz-nO-1X4" id="0yy-Iy-QkI"/>
+                <outlet property="movieType1" destination="EWY-El-GBS" id="9iQ-03-ytg"/>
+                <outlet property="movieType2" destination="hNf-LS-fU4" id="4Az-B2-ovj"/>
+                <outlet property="movieType3" destination="Bmd-hz-PdI" id="ngB-7d-WIW"/>
+                <outlet property="ratingImage" destination="ixn-62-O3Q" id="tSa-ZM-wyZ"/>
+                <outlet property="timeImage" destination="PQU-zT-2Fu" id="aoH-iW-jCu"/>
+            </connections>
+            <point key="canvasLocation" x="-24" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="theGodfather" width="1396" height="1982"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

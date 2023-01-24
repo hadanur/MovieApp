@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Merriweather-Black.ttf">
+            <string>Merriweather-Black</string>
+        </array>
+        <array key="Mulish-Light.ttf">
+            <string>Mulish-Light</string>
+        </array>
+        <array key="Mulish-Medium.ttf">
+            <string>Mulish-Medium</string>
+        </array>
+        <array key="Mulish-SemiBold.ttf">
+            <string>Mulish-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailsVC" customModule="MovieApp" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="zVK-LJ-rsb" id="QNq-mb-gBs"/>
+                <outlet property="selectedMovieDescription" destination="9ms-II-abh" id="epk-gt-ul8"/>
+                <outlet property="selectedMovieLanguage" destination="kok-Ta-6Js" id="PLc-WI-Nsc"/>
+                <outlet property="selectedMovieLength" destination="jj7-77-zua" id="Io9-Bm-7nA"/>
+                <outlet property="selectedMovieName" destination="XjF-3r-MWW" id="NdD-ut-KBl"/>
+                <outlet property="selectedMovieRating" destination="n4f-Xz-4BS" id="nEj-Q0-0Gl"/>
+                <outlet property="selectedMovieRating2" destination="apV-Vg-IQV" id="EQm-kU-Iwu"/>
+                <outlet property="selectedMovieType1" destination="H5V-eW-Y5c" id="2Z4-ES-rct"/>
+                <outlet property="selectedMovieType2" destination="3sV-fq-FcJ" id="Ms2-RW-yVE"/>
+                <outlet property="selectedMovieType3" destination="4wg-8M-WnB" id="DbX-S4-CnU"/>
+                <outlet property="view" destination="iN0-l3-epB" id="iV9-4C-BYm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spiderman" translatesAutoresizingMaskIntoConstraints="NO" id="oRr-h5-oid">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                    <color key="backgroundColor" red="0.52941176469999995" green="0.4039215686" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="GY7-hf-eoE"/>
+                        <constraint firstAttribute="width" constant="414" id="x8G-cn-aDq"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fwL-QC-Mzg">
+                    <rect key="frame" x="0.0" y="288" width="414" height="574"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="254" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XjF-3r-MWW">
+                            <rect key="frame" x="24" y="24" width="51.5" height="25.5"/>
+                            <fontDescription key="fontDescription" name="Mulish-SemiBold" family="Mulish" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n4f-Xz-4BS">
+                            <rect key="frame" x="40" y="56.5" width="30" height="16"/>
+                            <fontDescription key="fontDescription" name="Mulish-Light" family="Mulish" pointSize="12"/>
+                            <color key="textColor" red="0.4039215686" green="0.4039215686" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="hf6-gV-6bw">
+                            <rect key="frame" x="24" y="58.5" width="12" height="12"/>
+                            <color key="backgroundColor" red="0.61661910519999996" green="1" blue="0.6109868678" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="12" id="3BJ-Z0-aqQ"/>
+                                <constraint firstAttribute="height" constant="12" id="3jL-W3-adZ"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5V-eW-Y5c">
+                            <rect key="frame" x="24" y="88.5" width="30" height="15.5"/>
+                            <fontDescription key="fontDescription" name="Mulish-Light" family="Mulish" pointSize="12"/>
+                            <color key="textColor" red="0.4039215686" green="0.4039215686" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sV-fq-FcJ">
+                            <rect key="frame" x="68" y="88" width="30" height="15.5"/>
+                            <fontDescription key="fontDescription" name="Mulish-Light" family="Mulish" pointSize="12"/>
+                            <color key="textColor" red="0.4039215686" green="0.4039215686" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wg-8M-WnB">
+                            <rect key="frame" x="112" y="88.5" width="30" height="15.5"/>
+                            <fontDescription key="fontDescription" name="Mulish-Light" family="Mulish" pointSize="12"/>
+                            <color key="textColor" red="0.4039215686" green="0.4039215686" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Length" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gP-t5-7QP">
+                            <rect key="frame" x="24" y="124" width="38" height="15.5"/>
+                            <fontDescription key="fontDescription" name="Mulish-Light" family="Mulish" pointSize="12"/>
+                            <color key="textColor" red="0.4039215686" green="0.4039215686" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UCA-4e-7s9">
+                            <rect key="frame" x="131" y="123.5" width="55.5" height="15.5"/>
+                            <fontDescription key="fontDescription" name="Mulish-Light" family="Mulish" pointSize="12"/>
+                            <color key="textColor" red="0.4039215686" green="0.4039215686" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="254" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jj7-77-zua">
+                            <rect key="frame" x="24" y="143.5" width="31" height="15.5"/>
+                            <fontDescription key="fontDescription" name="Mulish-Medium" family="Mulish" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kok-Ta-6Js">
+                            <rect key="frame" x="131" y="143" width="31" height="15.5"/>
+                            <fontDescription key="fontDescription" name="Mulish-Medium" family="Mulish" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="254" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YRv-S2-Djm">
+                            <rect key="frame" x="24" y="183" width="119" height="25.5"/>
+                            <fontDescription key="fontDescription" name="Merriweather-Black" family="Merriweather" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ms-II-abh">
+                            <rect key="frame" x="24" y="222.5" width="366" height="110"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="110" id="8Wb-WQ-PAc"/>
+                                <constraint firstAttribute="width" constant="366" id="B06-ls-PLo"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Mulish-Light" family="Mulish" pointSize="12"/>
+                            <color key="textColor" red="0.4039215686" green="0.4039215686" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cast" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6NN-zJ-WEx">
+                            <rect key="frame" x="24" y="350.5" width="43.5" height="25.5"/>
+                            <fontDescription key="fontDescription" name="Merriweather-Black" family="Merriweather" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="zVK-LJ-rsb">
+                            <rect key="frame" x="24" y="393" width="390" height="132"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qSZ-Mj-cuX">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bV2-Tm-2Lm">
+                            <rect key="frame" x="236.5" y="123" width="36.5" height="15.5"/>
+                            <fontDescription key="fontDescription" name="Mulish-Light" family="Mulish" pointSize="12"/>
+                            <color key="textColor" red="0.4039215686" green="0.4039215686" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apV-Vg-IQV">
+                            <rect key="frame" x="236" y="142.5" width="31" height="15.5"/>
+                            <fontDescription key="fontDescription" name="Mulish-Medium" family="Mulish" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="bV2-Tm-2Lm" firstAttribute="top" secondItem="fwL-QC-Mzg" secondAttribute="top" constant="123" id="0II-qK-E8I"/>
+                        <constraint firstAttribute="trailing" secondItem="zVK-LJ-rsb" secondAttribute="trailing" id="26H-Ea-xLx"/>
+                        <constraint firstItem="jj7-77-zua" firstAttribute="leading" secondItem="fwL-QC-Mzg" secondAttribute="leading" constant="24" id="4FZ-8n-SbE"/>
+                        <constraint firstItem="YRv-S2-Djm" firstAttribute="leading" secondItem="fwL-QC-Mzg" secondAttribute="leading" constant="24" id="4Mm-Kp-SJB"/>
+                        <constraint firstItem="1gP-t5-7QP" firstAttribute="top" secondItem="H5V-eW-Y5c" secondAttribute="bottom" constant="20" id="7wy-7e-TbS"/>
+                        <constraint firstItem="4wg-8M-WnB" firstAttribute="top" secondItem="fwL-QC-Mzg" secondAttribute="top" constant="88.5" id="7z2-gY-Wfc"/>
+                        <constraint firstItem="YRv-S2-Djm" firstAttribute="top" secondItem="kok-Ta-6Js" secondAttribute="bottom" constant="24.5" id="9Y7-Vg-k6V"/>
+                        <constraint firstItem="3sV-fq-FcJ" firstAttribute="top" secondItem="n4f-Xz-4BS" secondAttribute="bottom" constant="15.5" id="ALd-2n-HGQ"/>
+                        <constraint firstItem="UCA-4e-7s9" firstAttribute="leading" secondItem="1gP-t5-7QP" secondAttribute="trailing" constant="69" id="D6b-Kl-FTL"/>
+                        <constraint firstItem="1gP-t5-7QP" firstAttribute="leading" secondItem="fwL-QC-Mzg" secondAttribute="leading" constant="24" id="DqT-dy-9CX"/>
+                        <constraint firstItem="H5V-eW-Y5c" firstAttribute="top" secondItem="n4f-Xz-4BS" secondAttribute="bottom" constant="16" id="EtM-4r-8oK"/>
+                        <constraint firstItem="6NN-zJ-WEx" firstAttribute="leading" secondItem="fwL-QC-Mzg" secondAttribute="leading" constant="24" id="JaI-RZ-sdp"/>
+                        <constraint firstItem="jj7-77-zua" firstAttribute="top" secondItem="1gP-t5-7QP" secondAttribute="bottom" constant="4" id="Jbh-Rv-aLQ"/>
+                        <constraint firstItem="YRv-S2-Djm" firstAttribute="top" secondItem="jj7-77-zua" secondAttribute="bottom" constant="24" id="NbE-wD-LcG"/>
+                        <constraint firstItem="apV-Vg-IQV" firstAttribute="top" secondItem="bV2-Tm-2Lm" secondAttribute="bottom" constant="4" id="PbF-2d-BWa"/>
+                        <constraint firstAttribute="trailing" secondItem="9ms-II-abh" secondAttribute="trailing" constant="24" id="Pcd-OT-xvZ"/>
+                        <constraint firstItem="kok-Ta-6Js" firstAttribute="top" secondItem="UCA-4e-7s9" secondAttribute="bottom" constant="4" id="QYa-yf-Yug"/>
+                        <constraint firstItem="9ms-II-abh" firstAttribute="top" secondItem="YRv-S2-Djm" secondAttribute="bottom" constant="14" id="U2c-2S-H0B"/>
+                        <constraint firstItem="UCA-4e-7s9" firstAttribute="top" secondItem="4wg-8M-WnB" secondAttribute="bottom" constant="19.5" id="V7H-Sv-ZMJ"/>
+                        <constraint firstItem="3sV-fq-FcJ" firstAttribute="leading" secondItem="H5V-eW-Y5c" secondAttribute="trailing" constant="14" id="WEh-OJ-BY5"/>
+                        <constraint firstItem="9ms-II-abh" firstAttribute="leading" secondItem="fwL-QC-Mzg" secondAttribute="leading" constant="24" id="XN4-bH-SmK"/>
+                        <constraint firstItem="hf6-gV-6bw" firstAttribute="top" secondItem="XjF-3r-MWW" secondAttribute="bottom" constant="9" id="Zmq-Qe-yru"/>
+                        <constraint firstItem="kok-Ta-6Js" firstAttribute="leading" secondItem="jj7-77-zua" secondAttribute="trailing" constant="76" id="bUr-yd-NNG"/>
+                        <constraint firstItem="n4f-Xz-4BS" firstAttribute="leading" secondItem="hf6-gV-6bw" secondAttribute="trailing" constant="4" id="ch8-5f-o36"/>
+                        <constraint firstAttribute="trailing" secondItem="apV-Vg-IQV" secondAttribute="trailing" constant="147" id="dcv-f6-Tpt"/>
+                        <constraint firstItem="n4f-Xz-4BS" firstAttribute="top" secondItem="XjF-3r-MWW" secondAttribute="bottom" constant="7" id="eMb-a4-VHH"/>
+                        <constraint firstItem="6NN-zJ-WEx" firstAttribute="top" secondItem="9ms-II-abh" secondAttribute="bottom" constant="18" id="gXz-hu-upq"/>
+                        <constraint firstItem="zVK-LJ-rsb" firstAttribute="leading" secondItem="fwL-QC-Mzg" secondAttribute="leading" constant="24" id="gj0-Ea-yee"/>
+                        <constraint firstAttribute="trailing" secondItem="bV2-Tm-2Lm" secondAttribute="trailing" constant="141" id="iai-bf-t5q"/>
+                        <constraint firstItem="zVK-LJ-rsb" firstAttribute="top" secondItem="6NN-zJ-WEx" secondAttribute="bottom" constant="17" id="jTd-uc-4ZC"/>
+                        <constraint firstItem="H5V-eW-Y5c" firstAttribute="leading" secondItem="fwL-QC-Mzg" secondAttribute="leading" constant="24" id="kPc-F1-NFQ"/>
+                        <constraint firstItem="hf6-gV-6bw" firstAttribute="leading" secondItem="fwL-QC-Mzg" secondAttribute="leading" constant="24" id="nYo-qy-VpQ"/>
+                        <constraint firstItem="4wg-8M-WnB" firstAttribute="leading" secondItem="3sV-fq-FcJ" secondAttribute="trailing" constant="14" id="qEp-8X-s70"/>
+                        <constraint firstAttribute="bottom" secondItem="zVK-LJ-rsb" secondAttribute="bottom" constant="49" id="y29-K5-JkO"/>
+                        <constraint firstItem="XjF-3r-MWW" firstAttribute="leading" secondItem="fwL-QC-Mzg" secondAttribute="leading" constant="24" id="yXO-dF-hkc"/>
+                        <constraint firstItem="XjF-3r-MWW" firstAttribute="top" secondItem="fwL-QC-Mzg" secondAttribute="top" constant="24" id="ynY-1H-L0a"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="oRr-h5-oid" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="1DS-99-RJd"/>
+                <constraint firstItem="fwL-QC-Mzg" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="4Ud-0N-6mh"/>
+                <constraint firstItem="oRr-h5-oid" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="JDd-Qj-J5G"/>
+                <constraint firstItem="fwL-QC-Mzg" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="240" id="PLD-wp-znC"/>
+                <constraint firstItem="fwL-QC-Mzg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="XNa-4S-ly4"/>
+                <constraint firstItem="fwL-QC-Mzg" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="etI-s7-JsK"/>
+                <constraint firstItem="oRr-h5-oid" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="m7Q-VG-4Ky"/>
+            </constraints>
+            <point key="canvasLocation" x="-24.637681159420293" y="19.419642857142858"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="spiderman" width="1920" height="1080"/>
+        <image name="star" width="12" height="12"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
